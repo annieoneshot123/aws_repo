@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoShare - Upload</title>
+</head>
+<body>
+    <h1>Upload a New Photo</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="photo" required>
+        <button type="submit">Upload</button>
+    </form>
+    <p><a href="/gallery">View Gallery</a></p>
+</body>
+</html>

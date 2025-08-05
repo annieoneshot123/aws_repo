@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoShare - Gallery</title>
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    <p><a href="/">Upload another photo</a></p>
+    <div>
+        {% for photo_url in photos %}
+            <img src="{{ photo_url }}" alt="Uploaded photo" width="300" style="margin: 10px;">
+        {% endfor %}
+    </div>
+</body>
+</html>
